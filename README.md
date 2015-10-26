@@ -1,8 +1,13 @@
 # JS Binary Clock
+
 A simple script for binary clock, impressed by KDE's applet
+
 ## Description
+
 The script is written in JavaScript. It provides a few methods for interaction, as explained below.
+
 ## How to use it
+
 It is necessary to use except the script, also and stylesheet to visualize the "clock" elements.
 ```HTML
 <head>
@@ -31,7 +36,9 @@ Here is an example:
 	</script>
 </body>
 ```
+
 ## Interface
+
 ### *`run()`*
 **Info**: This method starts the engine of the clock  
 **Arguments**: N/A
@@ -71,10 +78,18 @@ Here is an example:
 
 ### Note
 All of the above methods returns pointer to the created BinaryClock object; All of the above methods, except `run()` and `stop()`, are redrawing the clock container, regarding the new options.  
-## Example (in [JSfiddle](https://jsfiddle.net/h6m4jvrs/)):
+
+## Examples:
+In [JSfiddle](https://jsfiddle.net/h6m4jvrs/):
 ```JavaScript
 new BinaryClock( 'body' )
 .setSecondsPosition( 'middle' )
 .setType( 'small' )
 .setOrientation( 'ttb' );
+```
+Also, you can use the clock's container as you decide; the returned object of `new BinaryClock` contains pointer to the DOM node of the clock. Example with JQuery:
+```JavaScript
+var oClock = new BinaryClock( );
+JQuery( 'body' ).append( oClock.body );
+oClock.run( );
 ```
