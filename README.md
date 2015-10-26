@@ -92,7 +92,7 @@ new BinaryClock( )
 All of the above methods returns pointer to the created BinaryClock object; All of the above methods, except `run()` and `stop()`, are redrawing the clock container, regarding the new options.  
 
 ## Examples:
-In [JSfiddle](https://jsfiddle.net/h6m4jvrs/):
+In [JSfiddle](https://jsfiddle.net/h6m4jvrs/2/):
 ```JavaScript
 new BinaryClock( 'body' )
 .setSecondsPosition( 'middle' )
@@ -106,10 +106,7 @@ JQuery( 'body' ).append( oClock.body );
 oClock.run( );
 ```
 ## Captures
-![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example.png)
-
-![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example2.png)
-
-![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example3.png)
-
-![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example4.png)
+|  | Example 1 | Example 2 | Example 3 | Example 4 |
+| ------------ | ------------- | ------------ | ------------- | ------------ |
+| Preview | ![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example.png) | ![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example2.png) | ![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example3.png) | ![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example4.png) |
+| Stylesheet | binClock.css | binClock2.css | binClock3.css | binClock4.css |
