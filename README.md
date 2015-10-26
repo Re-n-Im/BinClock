@@ -76,6 +76,18 @@ Here is an example:
 	* **wide**, **long** or **big** - for 7bit clock;
 	* **tight**, **short** or **small** - for 4bit clock.
 
+### *`appendTo()`*
+**Info**: This method appends the clock to a DOM element  
+**Arguments**:
+* **DOM Element** - the value should be CSS selector or DOM id attribute of element.
+
+Example:
+```JavaScript
+new BinaryClock( )
+.appendTo( 'body' )
+.run( );
+```
+
 ### Note
 All of the above methods returns pointer to the created BinaryClock object; All of the above methods, except `run()` and `stop()`, are redrawing the clock container, regarding the new options.  
 
