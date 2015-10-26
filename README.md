@@ -105,3 +105,11 @@ var oClock = new BinaryClock( );
 JQuery( 'body' ).append( oClock.body );
 oClock.run( );
 ```
+## Captures
+![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example.png)
+
+![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example2.png)
+
+![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example3.png)
+
+![Example](https://raw.githubusercontent.com/Re-n-Im/BinClock/5a80d6bb3f4b6a49380bc870d7b4fc23263ad8e4/img/example4.png)
