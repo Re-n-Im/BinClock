@@ -54,32 +54,44 @@ Here is an example:
 ### *`setOrientation()`*
 **Info**: This method sets the clock orientation  
 **Arguments**:
-* **Orientation** - the value should be one of the following:
-	* **btt** - bottom to top;
-	* **ttb** - top to bottom;
-	* **ltr** - left to right;
-	* **rtl** - right to left;
-	* **vertical** - same as **btt**;
-	* **horizontal** - same as **rtl**.
+
+1. **Orientation**
+	* **Type**: String
+	* **Value** - should be one of the following:
+		* **btt** - bottom to top;
+		* **ttb** - top to bottom;
+		* **ltr** - left to right;
+		* **rtl** - right to left;
+		* **vertical** - same as **btt**;
+		* **horizontal** - same as **rtl**.
 
 ### *`setSecondsPosition()`*
 **Info**: This method sets the seconds block position  
 **Arguments**:
-* **Position** - the value should be one of the following:
-	* **center** or **middle** - the seconds will appear between the hours and the minutes blocks;
-	* **end** or **side** - the seconds will appear at the end of the clock container, depending on chosen orientation.
+
+1. **Position**
+	* **Type**: String
+	* **Value** - should be one of the following:
+		* **center** or **middle** - the seconds will appear between the hours and the minutes blocks;
+		* **end** or **side** - the seconds will appear at the end of the clock container, depending on chosen orientation.
 
 ### *`setType()`*
 **Info**: This method sets the the type of the clock - 4 or 7 bit, i.e. to be presented each digit from clock's elements or the whole block of the clock elements  
 **Arguments**:
-* **Type** - the value should be one of the following:
-	* **wide**, **long** or **big** - for 7bit clock;
-	* **tight**, **short** or **small** - for 4bit clock.
+
+1. **Type**
+	* **Type**: String
+	* **Value** - should be one of the following:
+		* **wide**, **long** or **big** - for 7bit clock;
+		* **tight**, **short** or **small** - for 4bit clock.
 
 ### *`appendTo()`*
 **Info**: This method appends the clock to a DOM element  
 **Arguments**:
-* **DOM Element** - the value should be CSS selector or DOM id attribute of element.
+
+1. **Selector or DOM Element to append to**
+	* **Type**: String
+	* **Value** - should be CSS selector or DOM id attribute of element.
 
 Example:
 ```JavaScript
