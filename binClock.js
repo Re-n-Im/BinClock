@@ -32,7 +32,12 @@ function BinaryClock( cont )
 	{
 		oBody = document.createElement( 'div' );
 		oBody.className = 'binary-clock-cont';
-		
+		appendClock( cont );
+		buildClockContainer( );
+	};
+	
+	var appendClock = function( cont )
+	{
 		if( typeof cont != 'undefined' )
 		{
 			if( document.querySelector( cont ) ? document.querySelector( cont ).nodeType == 1 : false )
@@ -41,7 +46,7 @@ function BinaryClock( cont )
 				document.getElementById( cont ).appendChild( oBody );
 		}
 		
-		buildClockContainer( );
+		return returnObject;
 	};
 	
 	var setTitle = function( arr )
@@ -178,6 +183,7 @@ function BinaryClock( cont )
 		body: oBody,
 		run: runClock,
 		stop: stopClock,
+		appendTo: appendClock,
 		showSeconds: function( )
 		{
 			bShowSeconds = true;
