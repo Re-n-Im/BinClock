@@ -46,7 +46,7 @@ function BinaryClock( cont )
 				document.getElementById( cont ).appendChild( oBody );
 		}
 		
-		return returnObject;
+		return this;
 	};
 	
 	var setTitle = function( arr )
