@@ -92,7 +92,8 @@ In [JSfiddle](https://jsfiddle.net/h6m4jvrs/2/):
 new BinaryClock( 'body' )
 .setSecondsPosition( 'middle' )
 .setType( 'small' )
-.setOrientation( 'ttb' );
+.setOrientation( 'ttb' )
+.setTheme( 'thm-1' );
 ```
 ## Captures
 |  | Example 1 | Example 2 | Example 3 | Example 4 |
