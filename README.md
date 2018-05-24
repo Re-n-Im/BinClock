@@ -1,29 +1,14 @@
 # Binary Clock
 
-A simple script for binary clock, impressed by KDE's applet
+A simple script for binary clock, impressed by KDE's applet :)
 
 ## Description
 
-The script is written in JavaScript. It provides a few methods for interaction, as explained below.
+The script is written in Vanilla JS. It provides a few methods for interaction, as explained below.
 
 ## How to use it
 
-It is necessary to use except the script, also and stylesheet to visualize the "clock" elements.
-```HTML
-<link rel="stylesheet" type="text/css" href="binClock.css">
-<script src="binClock.js" type="text/javascript"></script>
-```
-To create a new binary clock, you need to call
 ```JavaScript
-new BinaryClock( );
-```
-after the DOM tree has been loaded. `BinaryClock` accepts one parameter, which pass through `querySelector` or `getElementById`. Example:
-```JavaScript
-new BinaryClock( 'body' );
-```
-With chis code, the clock is created and visible, but it doesn't run.  
-Here is an example:
-```HTML
 new BinaryClock( 'body' ).run( );
 ```
 
