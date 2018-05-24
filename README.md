@@ -11,6 +11,9 @@ The script is written in Vanilla JS. It provides a few methods for interaction, 
 ```JavaScript
 new BinaryClock( 'body' ).run( );
 ```
+## Demo
+
+[Here](https://re-n-im.github.io/binclock/):
 
 ## Interface
 
@@ -86,8 +89,7 @@ new BinaryClock( )
 ### Note
 All of the above methods returns pointer to the created BinaryClock object; All of the above methods, except `run()` and `stop()`, are redrawing the clock container, regarding the new options.  
 
-## Examples:
-In [JSfiddle](https://jsfiddle.net/h6m4jvrs/2/):
+## Example:
 ```JavaScript
 new BinaryClock( 'body' )
 .setSecondsPosition( 'middle' )
