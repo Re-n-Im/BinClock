@@ -119,12 +119,6 @@ new BinaryClock( 'body' )
 .setType( 'small' )
 .setOrientation( 'ttb' );
 ```
-Also, you can use the clock's container as you decide; the returned object of `new BinaryClock` contains pointer to the DOM node of the clock. Example with JQuery:
-```JavaScript
-var oClock = new BinaryClock( );
-JQuery( 'body' ).append( oClock.body );
-oClock.run( );
-```
 ## Captures
 |  | Example 1 | Example 2 | Example 3 | Example 4 |
 | ------------ | ------------- | ------------ | ------------- | ------------ |
