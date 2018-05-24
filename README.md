@@ -13,7 +13,7 @@ new BinaryClock( 'body' ).run( );
 ```
 ## Demo
 
-[Here](https://re-n-im.github.io/binclock/):
+[Here](https://re-n-im.github.io/binclock/)
 
 ## Interface
 
