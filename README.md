@@ -10,11 +10,8 @@ The script is written in JavaScript. It provides a few methods for interaction, 
 
 It is necessary to use except the script, also and stylesheet to visualize the "clock" elements.
 ```HTML
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="binClock.css">
-	<script src="binClock.js" type="text/javascript"></script>
-</head>
+<link rel="stylesheet" type="text/css" href="binClock.css">
+<script src="binClock.js" type="text/javascript"></script>
 ```
 To create a new binary clock, you need to call
 ```JavaScript
@@ -27,14 +24,7 @@ new BinaryClock( 'body' );
 With chis code, the clock is created and visible, but it doesn't run.  
 Here is an example:
 ```HTML
-<body>
-	<script type="text/javascript">
-	( function( ) {
-		new BinaryClock( 'body' )
-		.run( );
-	} )( );
-	</script>
-</body>
+new BinaryClock( 'body' ).run( );
 ```
 
 ## Interface
