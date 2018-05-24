@@ -228,6 +228,12 @@ function BinaryClock( cont )
 				return this;
 			rebuildClock( );
 			return this;
+		},
+		setTheme: function( thm )
+		{
+			oBody.className = 'binary-clock-cont';
+			oBody.classList.add( thm );
+			return this;
 		}
 	};
 	

@@ -3,15 +3,55 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="binClock.css">
-		<script src="binClock.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="binClock-re.css">
 	</head>
 	<body>
+		<h2>Run/stop:</h2>
+		<input type="button" id="run" value="Run">
+		<input type="button" id="stop" value="Stop">
+		<h2>Orientation:</h2>
+		<input type="button" id="ttb" value="Top to Bottom">
+		<input type="button" id="btt" value="Bottom to Top">
+		<input type="button" id="ltr" value="Left to Right">
+		<input type="button" id="rtl" value="Right to Left">
+		<h2>Seconds toggle and position:</h2>
+		<input type="button" id="hide-sec" value="Hide Seconds">
+		<input type="button" id="show-sec" value="Show Seconds">
+		<input type="button" id="mid-sec" value="In the middle">
+		<input type="button" id="end-sec" value="At the end">
+		<h2>Type:</h2>
+		<input type="button" id="big" value="7bit">
+		<input type="button" id="small" value="4bit">
+		<h2>Theme:</h2>
+		<input type="button" id="theme1" value="Theme 1" class="change-theme-btt" data-class="thm-1">
+		<input type="button" id="theme2" value="Theme 2" class="change-theme-btt" data-class="thm-2">
+		<input type="button" id="theme3" value="Theme 3" class="change-theme-btt" data-class="thm-3">
+		<input type="button" id="theme4" value="Theme 4" class="change-theme-btt" data-class="thm-4">
+		<input type="button" id="theme5" value="Theme {Re}" class="change-theme-btt" data-class="thm-re">
+		<br><br>
+		
+		<script src="binClock.js" type="text/javascript"></script>
 		<script type="text/javascript">
-( function( ) {
-	new BinaryClock( 'body' )
-	.setType( 'small' )
-	.setOrientation( 'ltr' );
-} )( );
+			oBC = new BinaryClock( 'body' )
+			.setSecondsPosition( 'middle' )
+			.setType( 'small' )
+			.setOrientation( 'ttb' )
+			.setTheme( 'thm-re' );
+
+			document.getElementById( 'ttb' ).onclick = function( ) { oBC.setOrientation( 'ttb' ); };
+			document.getElementById( 'btt' ).onclick = function( ) { oBC.setOrientation( 'btt' ); };
+			document.getElementById( 'ltr' ).onclick = function( ) { oBC.setOrientation( 'ltr' ); };
+			document.getElementById( 'rtl' ).onclick = function( ) { oBC.setOrientation( 'rtl' ); };
+			document.getElementById( 'hide-sec' ).onclick = function( ) { oBC.hideSeconds( ); };
+			document.getElementById( 'show-sec' ).onclick = function( ) { oBC.showSeconds( ); };
+			document.getElementById( 'mid-sec' ).onclick = function( ) { oBC.setSecondsPosition( 'middle' ); };
+			document.getElementById( 'end-sec' ).onclick = function( ) { oBC.setSecondsPosition( 'end' ); };
+			document.getElementById( 'big' ).onclick = function( ) { oBC.setType( 'big' ); };
+			document.getElementById( 'small' ).onclick = function( ) { oBC.setType( 'small' ); };
+			document.getElementById( 'run' ).onclick = function( ) { oBC.run( ); };
+			document.getElementById( 'stop' ).onclick = function( ) { oBC.stop( ); };
+			var oThemes = document.getElementsByClassName( 'change-theme-btt' );
+			for( var i in oThemes ) oThemes[ i ].onclick = function( ) { oBC.setTheme( this.getAttribute( 'data-class' ) ) };
 		</script>
 	</body>
 </html>

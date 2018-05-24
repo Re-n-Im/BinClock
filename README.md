@@ -85,6 +85,14 @@ Here is an example:
 		* **wide**, **long** or **big** - for 7bit clock;
 		* **tight**, **short** or **small** - for 4bit clock.
 
+### *`setTheme()`*
+**Info**: This method changes the theme of the clock (changes the css class)
+**Arguments**:
+
+1. **Theme**
+	* **Type**: String
+	* **Value** - CSS classname
+
 ### *`appendTo()`*
 **Info**: This method appends the clock to a DOM element  
 **Arguments**:
