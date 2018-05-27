@@ -1,0 +1,21 @@
+{
+  "name": "BinClock",
+  "homepage": "https://github.com/Re-n-Im/BinClock",
+  "description": "A simple binary clock (Impressed by KDE's applet)",
+  "main": "binClock.js",
+  "keywords": [
+    "binary",
+    "clock"
+  ],
+  "authors": [
+    "Re"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
