@@ -221,7 +221,7 @@ function BinaryClock( cont )
 		setType: function( typ )
 		{
 			if( typ.match( /wide|long|big/ ) )
-				iRankBits = 7;
+				iRankBits = 6;
 			else if( typ.match( /tight|short|small/ ) )
 				iRankBits = 4;
 			else
