@@ -11,6 +11,13 @@ The script is written in Vanilla JS. It provides a few methods for interaction, 
 ```JavaScript
 new BinaryClock( 'body' ).run( );
 ```
+
+## Installation
+
+```
+bower install BinClock
+```
+
 ## Demo
 
 [Here](https://re-n-im.github.io/binclock/)
